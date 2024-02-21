@@ -1,0 +1,78 @@
+/* Reset de Estilos */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Menu Hambúrguer para telas pequenas */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Container do Banner */
+.banner-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.banner-container img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .banner-container img {
+        max-height: 200px;
+    }
+}
