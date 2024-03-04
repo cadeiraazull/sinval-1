@@ -1,0 +1,10 @@
+/* Seu estilo personalizado pode ser adicionado aqui */
+.carrossel {
+    width: 80%;
+    margin: auto;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+}
