@@ -4,7 +4,7 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-/* Estilos Gerais */
+/* Estilos corpo */
 body {
     font-family: Arial, sans-serif;
 }
@@ -64,6 +64,7 @@ nav {
         left: 0;
         width: 100%;
         background-color: #333;
+        cursor: pointer;
     }
 
     .menu.show {
@@ -77,4 +78,9 @@ nav {
     .banner-container img {
         max-height: 200px;
     }
+}
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
 }
