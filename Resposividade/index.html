@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js
+    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js
+    "></script>
     <title>Site Responsivo</title>
 </head>
 <body>
@@ -21,9 +25,11 @@
 
     <!-- Container do Banner -->
     <div class="banner-container">
-        <img src="image1.jpg" alt="Imagem 1">
-        <img src="image2.jpg" alt="Imagem 2">
-        <img src="image3.jpg" alt="Imagem 3">
+        <div class="cycle-slideshow" data-cycle-speed="3000">
+            <img src="image1.jpg" alt="Imagem 1">
+            <img src="image2.jpg" alt="Imagem 2">
+            <img src="image3.jpg" alt="Imagem 3">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
