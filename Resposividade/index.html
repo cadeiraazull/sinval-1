@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,22 @@
     "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js
     "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <title>Site Responsivo</title>
 </head>
+
 <body>
 
     <!-- Navegação -->
     <nav>
         <div class="menu-icon" onclick="clickMenu()">&#9776;</div>
-            <ul class="menu" id="itens">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <ul class="menu" id="itens">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </nav>
 
     <!-- Container do Banner -->
@@ -31,6 +35,27 @@
             <img src="image3.jpg" alt="Imagem 3">
         </div>
     </div>
+
+    <div class="banner-body" data-aos="fade-up" data-aos-duration="3000">
+        <img src="image7.jpeg" alt="Imagem 7">
+    </div>
+
+    <div class="banner-body" data-aos="zoom-in-up" data-aos-duration="3000">
+        <img src="image5.jpg" alt="Imagem 5">
+    </div>
+
+    <div class="banner-body" >
+        <img src="image6.jpeg" alt="Imagem 6">
+    </div>
+
+    <div class="banner-body" >
+        <img src="image5.jpg" alt="Imagem 5">
+    </div>
+
+    <script> AOS.init(); </script>
+
     <script src="script.js"></script>
+    
 </body>
+
 </html>

@@ -54,6 +54,20 @@ nav {
     /* transition: transform 0.5s ease-in-out; */
 }
 
+.banner-body {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-body img {
+    width: 50%;
+    padding: 10px;
+}
+
 /* Responsividade */
 @media screen and (max-width: 800px) {
     .menu {
@@ -77,6 +91,10 @@ nav {
 
     .banner-container img {
         max-height: 200px;
+    }
+
+    .banner-body img {
+        max-width: 100px;
     }
 }
 .clearfix::after {
