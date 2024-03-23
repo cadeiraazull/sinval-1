@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.banner-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+}
+
+.banner-container img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        cursor: pointer;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .banner-container img {
+        max-height: 200px;
+    }
+}
+
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photo img{
+    min-width: 500px;
+    min-height: 500px;
+}
