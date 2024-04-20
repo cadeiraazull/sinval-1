@@ -4,6 +4,10 @@ body {
     text-align: center;
 }
 
+h1, h6, p {
+    font-family: "Pacifico", cursive;
+}
+
 .banner-container {
     overflow: hidden;
     width: 100%;
