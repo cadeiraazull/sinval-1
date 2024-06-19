@@ -1,0 +1,45 @@
+
+* {
+    text-align: center;
+}
+
+.card text-bg-dark{
+    width: 50% ;
+}
+
+.card-img-overlay{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        cursor: pointer;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .banner-container img {
+        max-height: 200px;
+    }
+
+    .banner-body img {
+        max-width: 100px;
+    }
+}
