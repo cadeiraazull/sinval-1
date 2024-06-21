@@ -3,8 +3,16 @@
     text-align: center;
 }
 
-.card text-bg-dark{
-    width: 50% ;
+.card{
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.card-img-top{
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .card-img-overlay{
